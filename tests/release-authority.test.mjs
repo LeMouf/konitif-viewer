@@ -59,3 +59,10 @@ test('the release preparation retains only the archive emitted by the verifier',
   assert.match(script, /COPYFILE_EXCL/);
   assert.doesNotMatch(script, /npm pack|readdirSync/);
 });
+
+test('the release guide confines the initial local bootstrap to version 0.284.1', () => {
+  const guide = readFileSync(new URL('../RELEASE.md', import.meta.url), 'utf8');
+  assert.match(guide, /explicit\s+bootstrap exception/);
+  assert.match(guide, /Leave `VIEWER_NPM_PUBLISH_ENABLED` absent while pushing\n`v0\.284\.1`/);
+  assert.match(guide, /bootstrap has no CI provenance and must not be repeated/i);
+});

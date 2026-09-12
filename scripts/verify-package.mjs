@@ -114,6 +114,7 @@ const result = {
   sha256: createHash('sha256').update(bytes).digest('hex'),
   bytes: bytes.length,
   files: files.length,
+  archive: viewer.archive,
   consumer: 'isolated ESM and strict NodeNext declarations',
   evidence
 };

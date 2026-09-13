@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "package": "@konitif/viewer",
+  "intent": "Define view observations and intents without transferring subject authority to its projection.",
+  "clusters": [
+    {
+      "id": "viewer-contracts",
+      "title": "Viewer contracts",
+      "summary": "Snapshot, intents, and port independent of any rendering modality.",
+      "authority": "Amodal contract between subject and projection.",
+      "owns": [
+        "snapshot shape",
+        "intent shape"
+      ],
+      "doesNotOwn": [
+        "subject state",
+        "renderer",
+        "camera"
+      ],
+      "workflow": [
+        "Read",
+        "Project",
+        "Emit an intent"
+      ],
+      "sources": [
+        "src/viewerContracts.ts"
+      ]
+    },
+    {
+      "id": "composition-source",
+      "title": "Composition source",
+      "summary": "Detached reading of a Workflow Composition for legitimate projections.",
+      "authority": "Read source without direct mutation.",
+      "owns": [
+        "read adaptation",
+        "detachment"
+      ],
+      "doesNotOwn": [
+        "canonical composition",
+        "commit"
+      ],
+      "workflow": [
+        "Receive",
+        "Clone",
+        "Expose"
+      ],
+      "sources": [
+        "src/workflowCompositionSource.ts"
+      ]
+    }
+  ]
+}

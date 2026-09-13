@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "package": "@konitif/viewer",
+  "diagrams": [
+    {
+      "id": "projection-without-ownership",
+      "title": "Project without owning",
+      "kind": "boundary",
+      "summary": "Viewer reads a subject, produces a perceptible snapshot, and returns intents to its authority.",
+      "nodes": [
+        {
+          "id": "subject",
+          "label": "Canonical subject",
+          "description": "The domain retains identity and state."
+        },
+        {
+          "id": "source",
+          "label": "Read source",
+          "description": "A detached form is supplied."
+        },
+        {
+          "id": "snapshot",
+          "label": "Viewer snapshot",
+          "description": "Selection and observation are projected."
+        },
+        {
+          "id": "surface",
+          "label": "Projection",
+          "description": "An incarnation makes the reading perceptible.",
+          "tone": "projection"
+        },
+        {
+          "id": "intent",
+          "label": "Intent",
+          "description": "The gesture returns to the competent authority."
+        }
+      ],
+      "edges": [
+        {
+          "from": "subject",
+          "to": "source"
+        },
+        {
+          "from": "source",
+          "to": "snapshot"
+        },
+        {
+          "from": "snapshot",
+          "to": "surface"
+        },
+        {
+          "from": "surface",
+          "to": "intent"
+        },
+        {
+          "from": "intent",
+          "to": "subject"
+        }
+      ],
+      "caption": "The projection may request a mutation; it does not modify the subject directly."
+    }
+  ]
+}

@@ -56,13 +56,16 @@ const viewerDirectory = join(evidence, 'viewer');
 const packedViewer = pack(root, viewerDirectory);
 const files = packedViewer.files.map(file => file.path).sort();
 for (const file of files) {
-  assert.match(file, /^(dist\/|package\.json$|README\.md$|LICENSE\.md$)/);
+  assert.match(file, /^(dist\/|reference\/|package\.json$|README\.md$|LICENSE\.md$)/);
 }
 for (const file of [
   'dist/index.js',
   'dist/index.d.ts',
   'dist/viewerContracts.js',
   'dist/workflowCompositionSource.js',
+  'reference/README.md',
+  'reference/catalog.json',
+  'reference/diagrams.json',
   'README.md',
   'LICENSE.md',
   'package.json'

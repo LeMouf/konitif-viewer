@@ -9,7 +9,7 @@ test('the package and lock bind one amodal runtime dependency', () => {
   const lock = json('package-lock.json');
 
   assert.equal(manifest.name, '@konitif/viewer');
-  assert.equal(manifest.version, '0.284.1');
+  assert.equal(manifest.version, '0.284.2');
   assert.equal(manifest.private, false);
   assert.equal(manifest.repository.url, 'git+https://github.com/LeMouf/konitif-viewer.git');
   assert.deepEqual(manifest.publishConfig, {

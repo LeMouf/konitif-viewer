@@ -1,7 +1,7 @@
 {
   "name": "@konitif/viewer",
   "license": "PolyForm-Noncommercial-1.0.0",
-  "version": "0.284.1",
+  "version": "0.284.2",
   "private": false,
   "type": "module",
   "description": "Amodal viewer contracts for projecting subjects without owning their authority.",
@@ -25,7 +25,8 @@
     "LICENSE.md",
     "dist",
     "README.md",
-    "package.json"
+    "package.json",
+    "reference"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",

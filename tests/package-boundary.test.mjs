@@ -9,14 +9,14 @@ test('the package and lock bind one amodal runtime dependency', () => {
   const lock = json('package-lock.json');
 
   assert.equal(manifest.name, '@konitif/viewer');
-  assert.equal(manifest.version, '0.284.2');
+  assert.equal(manifest.version, '0.284.3');
   assert.equal(manifest.private, false);
   assert.equal(manifest.repository.url, 'git+https://github.com/LeMouf/konitif-viewer.git');
   assert.deepEqual(manifest.publishConfig, {
     access: 'public',
     registry: 'https://registry.npmjs.org/'
   });
-  assert.deepEqual(manifest.dependencies, { '@konitif/composition': '0.284.2' });
+  assert.deepEqual(manifest.dependencies, { '@konitif/composition': '0.284.5' });
   assert.deepEqual(manifest.devDependencies, { typescript: '5.9.3' });
   assert.equal(lock.name, manifest.name);
   assert.equal(lock.version, manifest.version);

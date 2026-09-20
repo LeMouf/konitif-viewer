@@ -37,5 +37,5 @@ tag as input. Dispatching from `main` is intentionally refused even if the input
 names an existing tag.
 
 The workflow does not upgrade Node or npm and does not publish source from a
-branch checkout. No renderer, physics backend, browser or product adapter is
+branch checkout. No renderer, simulation backend, browser or domain adapter is
 part of this release boundary.

@@ -13,5 +13,5 @@ npm test
 npm run verify:package
 ```
 
-Keep renderers, modality-specific state and product policy outside this amodal
+Keep renderers, modality-specific state and domain policy outside this amodal
 package. Follow `RELEASE.md` for publication.

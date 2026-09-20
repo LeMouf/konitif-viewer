@@ -19,7 +19,7 @@ npm install @konitif/viewer
 ## Authority boundary
 
 The package defines how a Viewer observes and addresses a subject. It does not
-provide a renderer, camera, geometry, physics policy or product workflow.
+provide a renderer, camera, geometry, simulation policy or source semantics.
 Specialized projections may extend the contracts, while domain authorities
 remain responsible for admitting or refusing emitted intents.
 

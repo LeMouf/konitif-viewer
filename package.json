@@ -1,7 +1,7 @@
 {
   "name": "@konitif/viewer",
   "license": "PolyForm-Noncommercial-1.0.0",
-  "version": "0.284.2",
+  "version": "0.284.3",
   "private": false,
   "type": "module",
   "description": "Amodal viewer contracts for projecting subjects without owning their authority.",
@@ -36,7 +36,7 @@
     "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
-    "@konitif/composition": "0.284.2"
+    "@konitif/composition": "0.284.5"
   },
   "devDependencies": {
     "typescript": "5.9.3"

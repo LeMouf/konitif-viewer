@@ -21,7 +21,7 @@ const manifest = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 
 assert.equal(manifest.name, '@konitif/viewer');
 assert.equal(manifest.private, false);
-assert.deepEqual(manifest.dependencies, { '@konitif/composition': '0.284.2' });
+assert.deepEqual(manifest.dependencies, { '@konitif/composition': '0.284.5' });
 assert.deepEqual(manifest.exports, {
   '.': { types: './dist/index.d.ts', import: './dist/index.js' }
 });

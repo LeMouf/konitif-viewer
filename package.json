@@ -1,7 +1,7 @@
 {
   "name": "@konitif/viewer",
   "license": "PolyForm-Noncommercial-1.0.0",
-  "version": "0.284.3",
+  "version": "0.284.4",
   "private": false,
   "type": "module",
   "description": "Amodal viewer contracts for projecting subjects without owning their authority.",
